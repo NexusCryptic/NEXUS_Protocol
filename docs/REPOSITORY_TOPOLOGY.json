@@ -1,0 +1,32 @@
+{
+  "copyright": "Copyright © 2026 CrypticNews LLC. All rights reserved.",
+  "schema": "nexus.convergence.repository.v1",
+  "canonical": {
+    "protocol": "NexusCryptic/NEXUS_Protocol",
+    "core": "NexusCryptic/NEXUS_CORE",
+    "public_surface": "NexusCryptic/NEXUS",
+    "ledger": "NexusCryptic/The-Ledger"
+  },
+  "repositories": [
+    {"repo":"NexusCryptic/NEXUS_Protocol","visibility":"public","role":"canonical-protocol","status":"canonical"},
+    {"repo":"NexusCryptic/NEXUS_CORE","visibility":"private","role":"kernel-target","status":"scaffold-requires-convergence"},
+    {"repo":"NexusCryptic/NEXUS","visibility":"public","role":"public-project-surface","status":"active"},
+    {"repo":"machackabook/NEXUS","visibility":"private","role":"historical-project-surface","status":"active-history"},
+    {"repo":"NexusCryptic/Project-NexusCryptic","visibility":"private","role":"primary-project-corpus","status":"inventory-confirmed-content-unreadable-in-current-pass"},
+    {"repo":"NexusCryptic/CrypticNEXUS","visibility":"private","role":"project-branch-surface","status":"candidate"},
+    {"repo":"NexusCryptic/NEXUS_Proto","visibility":"private","role":"prototype-lineage","status":"candidate"},
+    {"repo":"NexusCryptic/NEX","visibility":"private","role":"compact-project-surface","status":"candidate"},
+    {"repo":"NexusCryptic/Gaia-The-Nexus-Generation","visibility":"private","role":"gaia-project-surface","status":"candidate"},
+    {"repo":"NexusCryptic/Welcome-Sentience","visibility":"public","role":"sentience-runtime-surface","status":"candidate"},
+    {"repo":"NexusCryptic/The-Ledger","visibility":"public","role":"provenance-and-audit","status":"canonical-support"},
+    {"repo":"NexusCryptic/demo-repository","visibility":"private","role":"github-demo","status":"excluded"},
+    {"repo":"NexusCryptic/TOPSecret","visibility":"private","role":"unclassified","status":"excluded-pending-review"}
+  ],
+  "lineage_policy": {
+    "root": "NexusCryptic/NEXUS_Protocol",
+    "implementation": "NexusCryptic/NEXUS_CORE",
+    "evidence": "NexusCryptic/The-Ledger",
+    "presentation": "NexusCryptic/NEXUS",
+    "rule": "All accepted branches must retain source repository, source path, source commit, destination path, and review state."
+  }
+}
