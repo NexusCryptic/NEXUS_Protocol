@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1",
+  "generated_date": "2026-08-15",
+  "anchors": [
+    {"repository":"NexusCryptic/Gaia-The-Nexus-Generation","commit":"421ed43813f3ac4d557e44e2ae2e54032257c2e1","observed":"2025-07-28T00:58:02Z","status":"VERIFIED","role":"historical project surface"},
+    {"repository":"NexusCryptic/NEXUS_Protocol","commit":"16ef397e458f946e3c21882ebe663d85c3a20af7","observed":"2025-08-01T16:58:09Z","status":"VERIFIED","role":"protocol root"},
+    {"repository":"NexusCryptic/NEXUS","commit":"ac24207368175162923333efa1086d06cf76286e","observed":"2025-08-01T17:02:46Z","status":"VERIFIED","role":"runtime/public surface"},
+    {"repository":"NexusCryptic/Welcome-Sentience","commit":"ae12969361483cb62b1ea3cb5cab64f441377ced","observed":"2025-08-06T01:24:18Z","status":"VERIFIED","role":"Gaia.Nexus historical surface"},
+    {"repository":"machackabook/Project-NexusCryptic","commit":"da127e43a81053aed7a6e07f49c35be72dc4bcee","observed":"2025-08-09T01:55:19Z","status":"VERIFIED","role":"security provenance"},
+    {"repository":"machackabook/Project-NexusCryptic","commit":"1285c9dc35f8bdaa68343178b9ca59811aaa78eb","observed":"2025-08-14T21:33:48Z","status":"VERIFIED","role":"historical branch merge"},
+    {"repository":"NexusCryptic/The-Ledger","commit":"03f66d5168ad8d9e91371161a2e489b15858f9a5","observed":"2026-05-01T19:06:10Z","status":"VERIFIED","role":"provenance repository root"},
+    {"repository":"machackabook/GMNINEXUS","commit":"470c99214908686ecd0d0f433dc5936fff90c928","observed":"2026-07-21T23:10:37Z","status":"VERIFIED","role":"Gemma-GLM related artifact stream","author":"DigitalEuan"},
+    {"repository":"NexusCryptic/NEXUS","commit":"4b776c92813892ac9e97d420448b0a2765c26f41","observed":"2026-08-15T14:48:49Z","status":"VERIFIED","role":"unified runtime fabric"},
+    {"repository":"NexusCryptic/NEXUS","commit":"6cd2e4a61efa95af4ff169ce5b9b94591f5f9cc3","observed":"2026-08-15T14:49:18Z","status":"VERIFIED","role":"unified runtime viewport"},
+    {"repository":"NexusCryptic/NEXUS","commit":"2297a19bbbd70521ca5c5a77b298ab6ce65c6b20","observed":"2026-08-15T14:49:29Z","status":"VERIFIED","role":"research provenance and architecture"},
+    {"repository":"NexusCryptic/NEXUS","commit":"7f9cb3cb13abdd9ce682527e851b932cb70e9ca6","observed":"2026-08-15T15:08:42Z","status":"VERIFIED","role":"autonomous environment director"}
+  ],
+  "incoming": [
+    {"record_id":"LS-MEM-20260815-GEMMA-001","name":"Gemma Resonance Gambit","status":"INCOMING","commit":null,"git_blob":null,"sha256":null,"iso":null,"beat":null},
+    {"record_id":"LS-MEM-20260815-META-AI-001","name":"Meta-AI convergence material","status":"INCOMING","commit":null,"git_blob":null,"sha256":null,"iso":null,"beat":null}
+  ]
+}
