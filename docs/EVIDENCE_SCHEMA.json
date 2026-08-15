@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Living System Evidence Record",
+  "type": "object",
+  "required": ["record_id", "status", "observed_at", "source", "artifact"],
+  "properties": {
+    "record_id": {"type": "string"},
+    "status": {"enum": ["VERIFIED", "CORRELATED", "INCOMING", "EXTERNAL", "REJECTED"]},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "source": {"type": "object", "required": ["kind", "repository"], "properties": {"kind": {"enum": ["github", "conversation", "uploaded_file", "huggingface", "other"]}, "repository": {"type": ["string", "null"]}, "path": {"type": ["string", "null"]}, "ref": {"type": ["string", "null"]}, "commit_sha": {"type": ["string", "null"]}, "git_blob_sha": {"type": ["string", "null"]}, "url": {"type": ["string", "null"]}}},
+    "artifact": {"type": "object", "required": ["name", "sector"], "properties": {"name": {"type": "string"}, "sector": {"type": "string"}, "artifact_type": {"type": "string"}, "description": {"type": "string"}, "author": {"type": ["string", "null"]}, "license": {"type": ["string", "null"]}}},
+    "verification": {"type": "object", "properties": {"git_object_verified": {"type": "boolean"}, "sha256": {"type": ["string", "null"]}, "iso_verified": {"type": ["boolean", "null"]}, "beat_verified": {"type": ["boolean", "null"]}, "hash_method": {"type": ["string", "null"]}, "verified_by": {"type": ["string", "null"]}, "verified_at": {"type": ["string", "null"]}}},
+    "lineage": {"type": "object", "properties": {"parent_record_ids": {"type": "array", "items": {"type": "string"}}, "canonical_target": {"type": ["string", "null"]}, "promotion_state": {"enum": ["unreviewed", "reviewed", "eligible", "promoted", "rejected"]}}},
+    "notes": {"type": "string"}
+  }
+}
